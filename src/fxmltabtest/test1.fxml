@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmltabtest.Test1Controller">
+    <children>
+           <Button layoutX="126" layoutY="90" text="Start" onAction="#handleButtonAction" fx:id="button"   prefHeight="70.0" prefWidth="400.0"  AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"/>
+        <Label layoutX="126" layoutY="120" text="ggggggggggggggggggg" minHeight="16" minWidth="69" fx:id="label" />
+    </children>
+    <stylesheets>
+        <URL value="@myStyleSheet.css"/>
+    </stylesheets>
+</AnchorPane>

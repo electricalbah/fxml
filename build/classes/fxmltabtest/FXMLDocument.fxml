@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="myStyleSheet.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmltabtest.FXMLDocumentController">
+    <children>
+          <TabPane  AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <tabs>
+        <Tab text="Pictures"  closable="false" >
+            <graphic>
+                <javafx.scene.image.ImageView fx:id="videoImageView"/>
+            </graphic>
+            <content >
+                <fx:include fx:id="tab1"  source="test1.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Videos" closable="false">
+                  <graphic>
+             <javafx.scene.image.ImageView fx:id="imageView"/>
+            </graphic>
+            
+            <content>
+               <fx:include fx:id="tab2" source="test2.fxml"/>
+            </content>
+        </Tab>
+              <Tab text="Others" closable="false">
+                       <graphic>
+             <javafx.scene.image.ImageView fx:id="calcImageView"/>
+            </graphic>
+            <content>
+               <fx:include fx:id="tab3" source="test3.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
+     
+    </children>
+       <stylesheets>
+        <URL value="@myStyleSheet.css"/>
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FXMLTabTest.jnlp">
+  <information>
+    <title>FXMLTabTest</title>
+    <vendor>tomoko</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FXMLTabTest.jar" size="57495" download="eager" />
+    <jar href="lib/jackson-annotations-2.5.4.jar" size="39822" download="eager" />
+    <jar href="lib/jackson-core-2.5.4.jar" size="229999" download="eager" />
+    <jar href="lib/jackson-databind-2.5.4.jar" size="1144035" download="eager" />
+    <jar href="lib/jackson-jaxrs-base-2.5.4.jar" size="28849" download="eager" />
+    <jar href="lib/jackson-jaxrs-json-provider-2.5.4.jar" size="16689" download="eager" />
+    <jar href="lib/jackson-module-jaxb-annotations-2.5.4.jar" size="32606" download="eager" />
+    <jar href="lib/javax.json-1.0.1.jar" size="80627" download="eager" />
+    <jar href="lib/javax.json-api-1.0.jar" size="19754" download="eager" />
+    <jar href="lib/tyrus-standalone-client-jdk-1.12.jar" size="582592" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FXMLTabTest" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fxmltabtest.FXMLTabTest"  name="FXMLTabTest" />
+  <update check="always"/>
+</jnlp>

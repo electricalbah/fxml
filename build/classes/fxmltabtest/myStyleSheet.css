@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 23, 2014, 8:52:08 PM
+    Author     : tomoko
+*/
+
+
+
+.mainFxmlClass {
+     //-fx-background-radius: 0 0 0 0;
+     //-fx-background-color:	linear-gradient(orange, orangered );
+     
+            -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+.tab3background {
+     -fx-background-radius: 0 0 0 0;
+     -fx-background-color:	linear-gradient(orange, orangered );
+     
+}
+
+.button .text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0, 0, 0, 0.8), 0, 0.0 , 0 , -1 );
+}
+
+.button {
+    -fx-background-color:
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 0, 0, 0.8),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#242a2e, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+    -fx-background-radius: 7, 6, 5, 4, 3, 5;
+    -fx-background-insets: -3 -3 -4 -3, -3, 0, 1, 2, 0;
+    -fx-font-family: "Arial";
+    -fx-text-fill: white;
+    -fx-font-size: 26;
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-padding: 10 20 10 20;
+}
+
+.button:focused, .button:hover {
+    -fx-background-color:
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 0, 0, 0.8),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#3f4950, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,148,0.9),
+        rgba(255,255,255,0));
+}
+
+
+
+
+
+
+.root {
+     -fx-background-radius: 0 0 0 0;
+     -fx-background-color:	linear-gradient(orange, orangered );
+     
+}
+//http://stackoverflow.com/questions/17091605/how-to-change-the-tab-pane-style
+
+/*.tab-pane *.tab-header-background 
+{
+-fx-background-color: black;
+}*/
+
+
+//https://community.oracle.com/thread/3538389
+//.tab-pane > .tab-header-area > .headers-region > .tab:top {
+.tab:top {      //DONE
+  //-fx-background-color: -fx-tab-border-color, -fx-inner-border, -fx-body-color;
+  // -fx-background-color:darkgrey ; 
+   -fx-background-radius: 10 10 8 8;
+    
+    -fx-pref-height:100px;
+    -fx-pref-width: 120px;
+    //-fx-padding: 15 15 15 5;
+    -fx-padding:0;
+     -fx-background-insets: 5;    
+}  
+ 
+//.tab-pane > .tab-header-area > .headers-region > .tab:selected:top {
+.tab:selected:top {  
+      //-fx-border-color: yellow;  
+       //-fx-border-width: 5 1 1 1;
+   //-fx-border-radius: 10 10 8 8;  
+   -fx-background-radius: 10 10 8 8;
+    -fx-background-color: white;  
+   // -fx-pref-height: 100px;    
+    -fx-background-insets: 0;  
+}
+    
+ .tab:disabled 
+{
+-fx-opacity: -fx-disabled-opacity;
+}
+.tab:disabled:hover 
+{
+-fx-color: -fx-base;
+-fx-opacity: -fx-disabled-opacity;
+}   
+
+.tab:hover 
+{
+//-fx-color: -fx-hover-base;
+-fx-background-color:  #F7E6AF ;
+} 
+  
+ 
+
+.tab-pane > .tab-header-area > .headers-region > .tab> .tab-container > .tab-label  {   
+   //-fx-border-color: yellow; 
+   //-fx-border: none;
+    //-fx-alignment: BOTTOM_CENTER;  
+    //-fx-text-fill: #2381E9;  
+   // -fx-font-weight: bold; 
+}  
+  
+  
+/*.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {  
+    
+}*/
+
+
+
+
+
+//.tab-pane > .tab-header-area > .tab-header-background {  
+ .tab-header-background {  
+ -fx-background-color:
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 0, 0, 0.8),
+        #090a0c,
+        linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
+        linear-gradient(#242a2e, #23282e),
+        radial-gradient(center 50% 0%, radius 100%, rgba(135,142,158,255), rgba(255,255,255,0));
+   
+    -fx-border-color: green;  
+    -fx-border-width: 0 0 1 0;  
+    //-fx-background-insets: 0;  
+   // -fx-pref-height: 45px;    
+}  
+
